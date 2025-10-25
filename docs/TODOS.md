@@ -22,16 +22,16 @@ kanban-plugin: basic
 ## 📝 Todo - Ready to Start
 
 ### Phase 1: Foundation (PRIORITY)
-- [ ] Create directory structure (src/, cli/, scripts/, data/, config/, tests/, docs/vault/) #foundation #critical
-- [ ] Create subdirectories (data/raw/, data/extracted/, data/database/, docs/vault/Countries/) #foundation #critical
-- [ ] Create .gitignore file #foundation #critical
-- [ ] Create requirements.txt with all dependencies #foundation #critical
-- [ ] Design final database schema SQL file (11 tables + 2 new artifact tables) #database #critical
-- [ ] Add audit logging tables (`job_run`, `tool_call`, `scraper_audit_trail`) #database #audit
-- [ ] Add artifact tables (`artifacts`, `knowledge_artifacts`) #database #artifacts #critical
-- [ ] Create database initialization script (`scripts/db_init.py`) #database #critical
-- [ ] Create `cli/db_query.py` - Query database #cli #critical
-- [ ] Create `cli/db_insert.py` - Insert records #cli #critical
+- [x] Create directory structure (src/, cli/, scripts/, data/, config/, tests/, docs/vault/) #foundation #critical
+- [x] Create subdirectories (data/raw/, data/extracted/, data/database/, docs/vault/Countries/) #foundation #critical
+- [x] Create .gitignore file #foundation #critical
+- [x] Create requirements.txt with all dependencies #foundation #critical
+- [x] Design final database schema SQL file (11 tables + 2 new artifact tables) #database #critical
+- [x] Add audit logging tables (`job_run`, `tool_call`, `scraper_audit_trail`) #database #audit
+- [x] Add artifact tables (`artifacts`, `knowledge_artifacts`) #database #artifacts #critical
+- [x] Create database initialization script (`scripts/db_init.py`) #database #critical
+- [x] Create `cli/db_query.py` - Query database #cli #critical
+- [x] Create `cli/db_insert.py` - Insert records #cli #critical
 - [ ] Create `cli/db_update.py` - Update records #cli
 - [ ] Initialize process log (`docs/logs/process_log.md`) #logging #critical
 - [ ] Initialize domain knowledge log (`docs/logs/domain_knowledge.md`) #logging #critical
@@ -41,17 +41,19 @@ kanban-plugin: basic
 - [ ] Create `cli/country_task.py` - Manage country tasks #cli #logging
 
 ### Audit Logging Tools (HIGH PRIORITY)
-- [ ] Create `cli/audit_start_job.py` - Start scraping job #cli #audit #critical
-- [ ] Create `cli/audit_log_page.py` - Log every page visited #cli #audit #critical
-- [ ] Create `cli/audit_mark_source.py` - Mark knowledge sources #cli #audit #critical
-- [ ] Create `cli/audit_finish_job.py` - Finish job #cli #audit #critical
+- [x] Create `cli/audit_start_job.py` - Start scraping job #cli #audit #critical
+- [x] Create `cli/audit_log_page.py` - Log every page visited #cli #audit #critical
+- [x] Create `cli/audit_mark_source.py` - Mark knowledge sources #cli #audit #critical
+- [x] Create `cli/audit_finish_job.py` - Finish job #cli #audit #critical
+- [x] Create tests for audit logging tools (tests/test_audit_tools.py) #testing #audit #critical
 - [ ] Create `cli/audit_query.py` - Query audit trail #cli #audit
 - [ ] Create `cli/audit_replay.py` - Generate replay scripts #cli #audit
 - [ ] Create `cli/audit_validate.py` - Validate completeness #cli #audit
 - [ ] Create LLM prompt template for strict audit logging #documentation #audit
 
 ### Artifact Management Tools (HIGH PRIORITY)
-- [ ] Create `cli/artifact_register.py` - Register downloaded artifacts (PDFs, HTML, etc.) #cli #artifacts #critical
+- [x] Create `cli/artifact_register.py` - Register downloaded artifacts (PDFs, HTML, etc.) #cli #artifacts #critical
+- [x] Create tests for artifact registration (tests/test_artifact_tools.py) #testing #artifacts #critical
 - [ ] Create `cli/artifact_extract.py` - Extract text from PDFs/HTML to markdown #cli #artifacts #critical
 - [ ] Create `cli/artifact_list.py` - List artifacts with filters #cli #artifacts
 - [ ] Create `cli/knowledge_register.py` - Register Obsidian vault documents #cli #artifacts #critical
@@ -72,6 +74,7 @@ kanban-plugin: basic
 
 ## 🔄 In Progress - Currently Working On
 
+- [ ] Create `cli/artifact_register.py` - Register downloaded artifacts (PDFs, HTML, etc.) #cli #artifacts #critical
 
 
 ## ✅ Done - Completed
@@ -79,10 +82,12 @@ kanban-plugin: basic
 - [x] Create initial project plan (PROJECT_PLAN.md) #planning
 - [x] Validate concepts with web research (Brave Search) #planning
 - [x] Identify major 2025 policy changes #research
-- [x] Create master todos reference (MASTER_TODOS.md) #planning
+- [x] Create project scope reference (PROJECT_SCOPE.md - replaced MASTER_TODOS.md) #planning
 - [x] Create CLI tools specification (CLI_TOOLS_SPEC.md) #planning
 - [x] Create audit logging plan (AUDIT_LOGGING_PLAN.md) #planning
 - [x] Create unified kanban board (TODOS.md) #planning
+- [x] Create artifacts strategy (ARTIFACTS_STRATEGY.md) #planning
+- [x] Establish TRUE single source of truth (converted MASTER_TODOS.md to PROJECT_SCOPE.md) #planning
 
 
 ## 🚫 Blocked - Waiting On Something
@@ -172,7 +177,7 @@ kanban-plugin: basic
 6. **This is the SINGLE SOURCE OF TRUTH** for todos
 
 ### Other Documents
-- **MASTER_TODOS.md**: Reference showing all tasks organized by 11 phases (read-only, for context)
+- **PROJECT_SCOPE.md**: Complete 11-phase project scope (reference only, NO checkboxes)
 - **PROJECT_PLAN.md**: Overall strategy and architecture (reference, not todos)
 - **AUDIT_LOGGING_PLAN.md**: Detailed audit logging design (2-table strategy)
 - **ARTIFACTS_STRATEGY.md**: Artifact & knowledge management design (hybrid SQLite + filesystem) (NEW)

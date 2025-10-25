@@ -1,0 +1,80 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+venv/
+env/
+ENV/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+data/database/*.db
+data/database/*.sqlite
+
+# Data files
+data/raw/**/*
+data/extracted/**/*
+!data/raw/.gitkeep
+!data/extracted/.gitkeep
+
+# Logs
+*.log
+docs/logs/*.md
+!docs/logs/README.md
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Config with sensitive data
+config/secrets.yaml
+config/api_keys.yaml
+.env
+
+# Obsidian
+.obsidian/
+docs/vault/.obsidian/
+
+# Temporary files
+*.tmp
+*.bak
+tmp/
+temp/
+
+# Claude Code
+.claude/
+.specstory/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/

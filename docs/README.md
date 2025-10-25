@@ -7,12 +7,11 @@
 
 ### Core Planning Documents (Reference - NOT Todos)
 1. **[PROJECT_PLAN.md](PROJECT_PLAN.md)** - Overall project strategy, architecture, and validated 2025 updates
-2. **[MASTER_TODOS.md](MASTER_TODOS.md)** - All tasks organized by 11 phases (reference for scope, active work tracked in TODOS.md)
-3. **[CLI_TOOLS_SPEC.md](CLI_TOOLS_SPEC.md)** - Detailed specification for all 20+ CLI tools with usage examples
+2. **[PROJECT_SCOPE.md](PROJECT_SCOPE.md)** - Complete 11-phase project scope (reference only, no todos)
+3. **[CLI_TOOLS_SPEC.md](CLI_TOOLS_SPEC.md)** - Detailed specification for all 25+ CLI tools with usage examples
 4. **[AUDIT_LOGGING_PLAN.md](AUDIT_LOGGING_PLAN.md)** - Complete audit logging design (2-table strategy, CLI tools, MCP wrapper plan)
 5. **[ARTIFACTS_STRATEGY.md](ARTIFACTS_STRATEGY.md)** - Artifact & knowledge management (hybrid SQLite + filesystem, Obsidian vault)
 6. **[QUICK_START.md](QUICK_START.md)** - Quick reference guide for LLM agents
-7. **[KANBAN.md](KANBAN.md)** - DEPRECATED, replaced by TODOS.md
 
 ### Project Prompts
 - **[prompts/initial.md](prompts/initial.md)** - Original project requirements
@@ -211,7 +210,7 @@ See [CLI_TOOLS_SPEC.md](CLI_TOOLS_SPEC.md) for complete details.
 - Extend for job research
 - Catalogue tech companies
 
-See [MASTER_TODOS.md](MASTER_TODOS.md) for complete breakdown.
+See [PROJECT_SCOPE.md](PROJECT_SCOPE.md) for complete breakdown.
 
 ## 📖 Documentation Guidelines
 
@@ -292,7 +291,7 @@ When working on this project:
 ## 📞 Getting Help
 - **What to do next** → [TODOS.md](TODOS.md) ⭐ SINGLE SOURCE OF TRUTH
 - Overall strategy → [PROJECT_PLAN.md](PROJECT_PLAN.md)
-- Full scope (all phases) → [MASTER_TODOS.md](MASTER_TODOS.md) (reference only)
+- Full scope (all phases) → [PROJECT_SCOPE.md](PROJECT_SCOPE.md) (reference only)
 - How to use tools → [CLI_TOOLS_SPEC.md](CLI_TOOLS_SPEC.md)
 - Audit logging → [AUDIT_LOGGING_PLAN.md](AUDIT_LOGGING_PLAN.md)
 - Artifact management → [ARTIFACTS_STRATEGY.md](ARTIFACTS_STRATEGY.md)
