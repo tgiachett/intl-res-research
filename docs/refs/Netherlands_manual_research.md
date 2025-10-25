@@ -152,3 +152,57 @@ If you want, tell me your current status (citizenship, facilitator prospects, ca
 [1]: https://ind.nl/en/residence-permits/work/start-up "Start-up | IND"
 [2]: https://ind.nl/en/required-amounts-income-requirements "Required amounts income requirements | IND"
 [3]: https://ind.nl/en/residence-permits/work/residence-permit-self-employed-person "Residence permit self-employed person | IND"
+
+Great questions—here’s the clean recap for the **Start‑up** route vs the **Self‑employed (zzp)** route, with the exact current rules.
+
+---
+
+## 1) **During the Start‑up year**
+
+* **Do you have to make revenue?** **No.** The IND does **not** set a business‑revenue or profit target for the Start‑up permit. Instead, you must prove you have **enough money to live on** for the year (e.g., funds in a Dutch bank or a notary’s third‑party account), or your **facilitator** finances your stay. IND states you must “meet the income requirements” and you can prove this by **showing funds for your entire stay (max 1 year)**; it’s about **means of subsistence**, not company revenue. ([IND][1])
+
+* **What else is required in that first year?**
+  A signed agreement with a recognised **facilitator/mentor**, **KvK registration**, and a **step‑by‑step plan** (business plan) that RVO assesses. ([IND][1])
+
+> IND doesn’t publish a unique euro figure just for Start‑up founders; they only require that sufficient funds are available for the whole year. (That’s why you won’t see a “Start‑up = €X/month” line on the IND “Required amounts” page.) ([IND][1])
+
+---
+
+## 2) **What happens after the Start‑up year?**
+
+* The Start‑up permit is **max 1 year** and **cannot be extended**. To stay in the Netherlands after that, you must **switch to another residence purpose**—most commonly **Self‑employed** (zzp). IND also asks for a **declaration from the facilitator** showing you completed **at least 3 months** of mentoring when you switch. ([IND][1])
+
+*(You could also switch to a job route like Highly Skilled Migrant if you get hired, but that’s a different pathway.)* ([IND][2])
+
+---
+
+## 3) **If you switch to Self‑employed, what income is checked?**
+
+* For the **Self‑employed** permit, IND checks two things:
+
+  1. **Business viability** via RVO’s points test (personal experience, business plan, added value). ([IND][3])
+  2. **Income level from your business**. The current IND threshold is **“gross profit per month (with holiday allowance) € 1,697.82”** (valid **1 July–31 December 2025**). This refers to **profit from your business**, not turnover (revenue). ([IND][4])
+
+* IND also looks at whether your income is **sustainable** over time and may consider earlier required amounts when assessing fluctuations (i.e., it’s not literally a single‑month snapshot). ([IND][4])
+
+> Your “~€1,600” instinct is close, but the **current** figure is **€ 1,697.82**. These amounts are updated periodically; always check the IND “Required amounts” page before you file. ([IND][4])
+
+---
+
+## 4) Don’t confuse with this separate figure
+
+* You might also see **€ 2,989**/month mentioned online—that’s the salary criterion for **essential start‑up personnel** (employees of a start‑up), **not** for founders on the Start‑up permit and **not** for the Self‑employed route. ([IND][4])
+
+---
+
+### Bottom line
+
+* **Start‑up year:** **No revenue target.** Show **personal means of subsistence** (or facilitator financing) + facilitator + plan + KvK. ([IND][1])
+* **After 1 year:** Start‑up **can’t be extended** → switch to **Self‑employed** (or another route). For **Self‑employed**, plan on **~€ 1,697.82 profit/month** (Jul–Dec 2025 level) **and** passing the **RVO points test**. ([IND][1])
+
+If you want, tell me your runway (how many months of living costs you can show today) and where you are with a facilitator and KvK. I can map that to an immediate filing checklist and a realistic timeline to reach the self‑employed thresholds.
+
+[1]: https://ind.nl/en/residence-permits/work/start-up "Start-up | IND"
+[2]: https://ind.nl/en/residence-permits/work/highly-skilled-migrant?utm_source=chatgpt.com "Highly skilled migrant"
+[3]: https://ind.nl/en/residence-permits/work/residence-permit-self-employed-person "Residence permit self-employed person | IND"
+[4]: https://ind.nl/en/required-amounts-income-requirements "Required amounts income requirements | IND"

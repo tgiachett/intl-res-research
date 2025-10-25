@@ -25,11 +25,17 @@ env/
 ENV/
 
 # Database
+# IMPORTANT: SQLite databases can get large and may contain sensitive data
+# Generally NOT recommended to commit to GitHub
 *.db
 *.sqlite
 *.sqlite3
 data/database/*.db
 data/database/*.sqlite
+
+# Exception: Small test/seed databases could be committed if needed
+# Uncomment the line below to allow committing a specific seed database:
+# !data/database/seed_residency.db
 
 # Data files
 data/raw/**/*

@@ -3,15 +3,21 @@
 Tests for Artifact Management CLI Tools
 
 Tests artifact registration workflow.
+Uses a separate test database to avoid polluting production data.
 """
 
 import subprocess
 import sqlite3
+import tempfile
+import shutil
+import os
 from pathlib import Path
 import sys
 
 # Project root
 PROJECT_ROOT = Path(__file__).parent.parent
+TEST_DB_PATH = PROJECT_ROOT / "data" / "database" / "test_residency.db"
+PROD_DB_PATH = PROJECT_ROOT / "data" / "database" / "residency.db"
 
 
 def run_cli(command: list) -> tuple:
@@ -25,13 +31,40 @@ def run_cli(command: list) -> tuple:
     return result.stdout.strip(), result.stderr, result.returncode
 
 
+def setup_test_database():
+    """Create a test database by copying production schema"""
+    # Copy production database to test database
+    if PROD_DB_PATH.exists():
+        shutil.copy(PROD_DB_PATH, TEST_DB_PATH)
+        print(f"   ✓ Created test database: {TEST_DB_PATH}")
+    else:
+        print(f"   ❌ Production database not found: {PROD_DB_PATH}")
+        sys.exit(1)
+
+
+def cleanup_test_database():
+    """Remove test database and test files"""
+    if TEST_DB_PATH.exists():
+        TEST_DB_PATH.unlink()
+        print(f"   ✓ Cleaned up test database")
+
+    # Clean up test files
+    test_dir = PROJECT_ROOT / "data" / "raw" / "test_italy"
+    if test_dir.exists():
+        shutil.rmtree(test_dir)
+        print(f"   ✓ Cleaned up test files")
+
+
 def test_artifact_registration():
     """Test artifact registration"""
     print("🧪 Testing Artifact Registration\n")
     print("=" * 60)
 
-    # Create a test PDF file
-    test_pdf_path = PROJECT_ROOT / "data" / "raw" / "italy" / "test_visa.pdf"
+    # Setup test database
+    setup_test_database()
+
+    # Create a test PDF file in a test directory
+    test_pdf_path = PROJECT_ROOT / "data" / "raw" / "test_italy" / "test_visa.pdf"
     test_pdf_path.parent.mkdir(parents=True, exist_ok=True)
     test_pdf_path.write_bytes(b"%PDF-1.4\n%Test PDF content\n%%EOF")
 
@@ -84,8 +117,7 @@ def test_artifact_registration():
 
     # Test 3: Verify database state
     print("\n3️⃣  Verifying database state...")
-    db_path = PROJECT_ROOT / "data" / "database" / "residency.db"
-    conn = sqlite3.connect(db_path)
+    conn = sqlite3.connect(TEST_DB_PATH)
     cursor = conn.cursor()
 
     # Check artifact
@@ -114,8 +146,8 @@ def test_artifact_registration():
 
     conn.close()
 
-    # Cleanup
-    test_pdf_path.unlink(missing_ok=True)
+    # Cleanup test database and files
+    cleanup_test_database()
 
     print("\n✅ All artifact registration tests PASSED!")
     return True
