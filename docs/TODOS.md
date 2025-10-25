@@ -79,10 +79,12 @@ kanban-plugin: basic
 - [x] Create initial project plan (PROJECT_PLAN.md) #planning
 - [x] Validate concepts with web research (Brave Search) #planning
 - [x] Identify major 2025 policy changes #research
-- [x] Create master todos reference (MASTER_TODOS.md) #planning
+- [x] Create project scope reference (PROJECT_SCOPE.md - replaced MASTER_TODOS.md) #planning
 - [x] Create CLI tools specification (CLI_TOOLS_SPEC.md) #planning
 - [x] Create audit logging plan (AUDIT_LOGGING_PLAN.md) #planning
 - [x] Create unified kanban board (TODOS.md) #planning
+- [x] Create artifacts strategy (ARTIFACTS_STRATEGY.md) #planning
+- [x] Establish TRUE single source of truth (converted MASTER_TODOS.md to PROJECT_SCOPE.md) #planning
 
 
 ## 🚫 Blocked - Waiting On Something
@@ -172,7 +174,7 @@ kanban-plugin: basic
 6. **This is the SINGLE SOURCE OF TRUTH** for todos
 
 ### Other Documents
-- **MASTER_TODOS.md**: Reference showing all tasks organized by 11 phases (read-only, for context)
+- **PROJECT_SCOPE.md**: Complete 11-phase project scope (reference only, NO checkboxes)
 - **PROJECT_PLAN.md**: Overall strategy and architecture (reference, not todos)
 - **AUDIT_LOGGING_PLAN.md**: Detailed audit logging design (2-table strategy)
 - **ARTIFACTS_STRATEGY.md**: Artifact & knowledge management design (hybrid SQLite + filesystem) (NEW)
