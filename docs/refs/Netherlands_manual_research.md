@@ -121,3 +121,34 @@ If you tell me your situation (citizenship, goal: work, study, partner, start a 
 [17]: https://ind.nl/en/apply-for-mvv-and-residence-permit-from-abroad?utm_source=chatgpt.com "Apply for MVV and residence permit from abroad - IND"
 [18]: https://ind.nl/en/required-amounts-income-requirements?utm_source=chatgpt.com "Required amounts income requirements"
 [19]: https://ind.nl/en/living-in-the-netherlands-with-a-residence-permit/civic-integration-for-more-secure-residence-permit-and-naturalisation?utm_source=chatgpt.com "Civic integration for more secure residence permit and ..."
+
+
+Short version: the Dutch **Start-up** permit is designed to be **pre-revenue**. You don’t need to show business income; you must show **sufficient means to live for the year** **and** have a recognised **facilitator** plus a solid **step-by-step plan**. After that year you normally **switch to the Self-employed (zzp) permit**, which *does* look at business viability and (for 2025) expects roughly **€1,697.82 gross profit/month** along with an **RVO points assessment**. ([IND][1])
+
+# What the Start-up route actually requires
+
+* **No revenue target.** IND does not require sales or profit during the start-up year. Instead, you must prove **income for living costs** (e.g., bank balance in a Dutch account or your facilitator finances your stay). ([IND][1])
+* **Step-by-step plan (business plan) assessed by RVO.** Must describe org structure, roles, legal form, staffing, goals, your innovative product/service, and the rollout plan from idea to company. ([IND][1])
+* **Recognised facilitator & registration.** You need a signed contract with an approved **facilitator** and registration in the Dutch Chamber of Commerce (**KvK**). ([IND][1])
+* **Proof of means of subsistence.** IND explains acceptable proofs (e.g., Dutch bank statement in your name or notary third-party account; facilitator can finance your stay). Amount is tied to IND’s “required amounts” policy (social-minimum level), not to company revenue. ([IND][1])
+
+# How it differs from **Self-employed (zzp)** after the start-up year
+
+* **Timing:** Start-up is **max 1 year** and cannot be extended; you’re expected to **switch to Self-employed** afterwards (or another route). RVO notes the handover and that a facilitator statement may be needed. ([IND][1])
+* **Financial test:** Self-employed applications must meet IND’s **income requirement**; for **2025**, the IND lists **€1,697.82 gross profit per month (incl. holiday allowance)** as the reference figure. ([IND][2])
+* **Business viability test:** RVO applies a **points system** across **personal experience, business plan, and added value to NL**; you need sufficient points (e.g., 30 per pillar or 45/45 on two pillars). ([IND][3])
+
+# Do you need an existing company or just a plan?
+
+* You **can start with a plan**: the start-up permit explicitly expects a **plan to go from idea to company**. You do, however, **register** (KvK) and actively build the company during that year under the guidance of your **facilitator**. Pre-revenue is fine during this period as long as you meet the living-cost requirement. ([IND][1])
+
+# Quick decision guide
+
+* **Pre-revenue, innovative idea, mentor in place?** → **Start-up permit** (show personal means + facilitator + step-by-step plan). ([IND][1])
+* **Operating business with paying clients and projections, no facilitator?** → **Self-employed permit** (meet income level ~€1,697.82/month gross profit in 2025 and pass RVO points). ([IND][3])
+
+If you want, tell me your current status (citizenship, facilitator prospects, cash runway, any Dutch clients), and I’ll map it to: which permit fits now, the exact documents IND expects, and how to structure the step-by-step plan to satisfy RVO’s checklist.
+
+[1]: https://ind.nl/en/residence-permits/work/start-up "Start-up | IND"
+[2]: https://ind.nl/en/required-amounts-income-requirements "Required amounts income requirements | IND"
+[3]: https://ind.nl/en/residence-permits/work/residence-permit-self-employed-person "Residence permit self-employed person | IND"
