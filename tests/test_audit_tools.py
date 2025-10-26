@@ -7,36 +7,78 @@ Tests the complete audit workflow:
 2. Log pages
 3. Mark sources
 4. Finish job
+
+Uses a separate test database to avoid polluting production data.
 """
 
 import subprocess
 import sqlite3
 import tempfile
 import shutil
+import os
 from pathlib import Path
 import sys
 
 # Project root
 PROJECT_ROOT = Path(__file__).parent.parent
+TEST_DB_PATH = PROJECT_ROOT / "data" / "database" / "test_residency.db"
+PROD_DB_PATH = PROJECT_ROOT / "data" / "database" / "residency.db"
 
 
 def run_cli(command: list) -> tuple:
     """
     Run a CLI command and return (stdout, stderr, returncode)
     """
+    # Set environment to use test database
+    env = os.environ.copy()
+    env['TEST_MODE'] = '1'
+
     result = subprocess.run(
         command,
         capture_output=True,
         text=True,
-        cwd=PROJECT_ROOT
+        cwd=PROJECT_ROOT,
+        env=env
     )
     return result.stdout.strip(), result.stderr, result.returncode
+
+
+def setup_test_database():
+    """Create a fresh test database"""
+    # Run db_init to create test database
+    result = subprocess.run(
+        ['python', 'scripts/db_init.py', '--db-path', str(TEST_DB_PATH), '--force'],
+        capture_output=True,
+        text=True,
+        cwd=PROJECT_ROOT
+    )
+    if result.returncode != 0:
+        print(f"   ❌ Failed to create test database", file=sys.stderr)
+        print(result.stderr, file=sys.stderr)
+        sys.exit(1)
+    print(f"   ✓ Created fresh test database: {TEST_DB_PATH}")
+
+
+def cleanup_test_database():
+    """Remove test database"""
+    if TEST_DB_PATH.exists():
+        TEST_DB_PATH.unlink()
+        print(f"   ✓ Cleaned up test database")
+
+    # Clean up test artifacts
+    test_artifact = PROJECT_ROOT / "data" / "raw" / "test_page.html"
+    if test_artifact.exists():
+        test_artifact.unlink()
+        print(f"   ✓ Cleaned up test artifact")
 
 
 def test_audit_workflow():
     """Test complete audit workflow"""
     print("🧪 Testing Audit Workflow\n")
     print("=" * 60)
+
+    # Setup test database
+    setup_test_database()
 
     # Test 1: Start a job
     print("\n1️⃣  Testing audit_start_job.py...")
@@ -140,8 +182,7 @@ def test_audit_workflow():
 
     # Test 6: Verify database state
     print("\n6️⃣  Verifying database state...")
-    db_path = PROJECT_ROOT / "data" / "database" / "residency.db"
-    conn = sqlite3.connect(db_path)
+    conn = sqlite3.connect(TEST_DB_PATH)
     cursor = conn.cursor()
 
     # Check job_run
@@ -188,8 +229,8 @@ def test_audit_workflow():
 
     conn.close()
 
-    # Cleanup
-    test_artifact_path.unlink(missing_ok=True)
+    # Cleanup test database and files
+    cleanup_test_database()
 
     print("\n✅ All audit workflow tests PASSED!")
     return True

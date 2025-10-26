@@ -32,9 +32,11 @@ kanban-plugin: basic
 - [x] Create database initialization script (`scripts/db_init.py`) #database #critical
 - [x] Create `cli/db_query.py` - Query database #cli #critical
 - [x] Create `cli/db_insert.py` - Insert records #cli #critical
+- [x] Create `cli/export.py` - Generate knowledge base from database #cli #critical
 - [ ] Create `cli/db_update.py` - Update records #cli
-- [ ] Initialize process log (`docs/logs/process_log.md`) #logging #critical
-- [ ] Initialize domain knowledge log (`docs/logs/domain_knowledge.md`) #logging #critical
+- [x] Initialize process log (`docs/logs/process_log.md`) #logging #critical
+- [x] Initialize domain knowledge log (`docs/logs/domain_knowledge.md`) #logging #critical
+- [x] Complete Italy research pilot with full workflow #research #italy #critical
 - [ ] Create country task log template (`docs/countries/TEMPLATE/tasks.md`) #logging
 - [ ] Create `cli/log_append.py` - Append to process log #cli #logging
 - [ ] Create `cli/domain_log.py` - Add domain knowledge #cli #logging
