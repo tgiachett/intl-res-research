@@ -10,6 +10,19 @@
 
 Use this checklist for each country to ensure complete coverage.
 
+### 🤝 Treaty-Based Pathways (Check by Nationality)
+
+- [ ] **US-Specific Treaties**
+  - Search: "[Country] US treaty visa American 2025"
+  - Examples: Netherlands DAFT, Japan similar treaty
+  - Often easier/lower requirements than general pathways
+
+- [ ] **Other Bilateral Treaties**
+  - Search: "[Country] bilateral treaty work visa [your nationality]"
+  - Turkey-EU association agreements
+  - Japan-Netherlands friendship treaty
+  - Check if your nationality has special agreements
+
 ### 🏢 Work-Based Pathways (6 types)
 
 - [ ] **Digital Nomad Visa**
@@ -124,6 +137,9 @@ Use this checklist for each country to ensure complete coverage.
   - Search: "[Country] permanent residence permit 2025"
   - After X years (typically 5)
   - More rights than temporary permits
+  - **CRITICAL**: Check temporary vs non-temporary distinction!
+    - Student, ICT, orientation year often DON'T count
+    - Only non-temporary permits count toward 5-year requirement
 
 - [ ] **EU Long-Term Resident Status** (if EU)
   - Search: "[Country] EU long-term resident status 2025"
@@ -131,6 +147,11 @@ Use this checklist for each country to ensure complete coverage.
   - Can move to other EU countries
 
 ### 🔍 Special / Niche Pathways (Check if Available)
+
+- [ ] **Orientation Year / Search Year for Graduates**
+  - Search: "[Country] orientation year graduates job search 2025"
+  - 1-year permit to find work after graduation
+  - Examples: Netherlands (Zoekjaar), Germany (job seeker)
 
 - [ ] **Job Seeker Visa**
   - Search: "[Country] job seeker visa 2025"
